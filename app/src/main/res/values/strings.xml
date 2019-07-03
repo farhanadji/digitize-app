@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">MyLibrary</string>
+    <string name="title">Title</string>
+    <string name="author">Author</string>
+    <string name="price">Rp. 5000</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="book">Book</string>
+    <string name="transaction">Transaction</string>
+    <string name="profile">Profile</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="borrowed">BORROWED</string>
+    <string name="number">Number</string>
+    <string name="tanggal">2019-12-12</string>
+    <string name="email_address">Email Address</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="create_new_acc">Create a new account</string>
+    <string name="register">Register</string>
+    <string name="name">Name</string>
+    <string name="submit">SUBMIT</string>
+    <string name="book_title">Book Title</string>
+    <string name="book_id">Book Id</string>
+    <string name="dummyprice">5000</string>
+    <string name="borrow_date">Borrow Date</string>
+    <string name="select_date">Select date</string>
+    <string name="return_date">Return Date</string>
+</resources>
