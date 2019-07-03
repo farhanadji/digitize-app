@@ -89,6 +89,7 @@ public class ProfileFragment extends Fragment {
                         Toast.makeText(getActivity(), "Logout Successfully", Toast.LENGTH_SHORT).show();
                         Intent succes = new Intent(getActivity(), LoginActivity.class);
                         startActivity(succes);
+                        getActivity().finish();
                         loadDialog.dismiss();
                     }else{
                         Toast.makeText(getActivity(), "Logout Failed", Toast.LENGTH_SHORT).show();

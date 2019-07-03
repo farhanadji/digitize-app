@@ -45,11 +45,11 @@ public class TransactionAdapter extends RecyclerView.Adapter<TransactionAdapter.
     public void onBindViewHolder(@NonNull TransactionAdapter.TransactionViewHolder holder, int position) {
         final int transactionId = transactionItems.get(position).getTransaction_id();
 
-        holder.TransactionId.setText(Integer.toString(transactionItems.get(position).getTransaction_id()));
+        holder.TransactionId.setText("Transaction Id : " + Integer.toString(transactionItems.get(position).getTransaction_id()));
         holder.Transaction_Status.setText(transactionItems.get(position).getStatus());
-        holder.TransactionBorrowed.setText(transactionItems.get(position).getBorrowdate());
-        holder.TransactionReturned.setText(transactionItems.get(position).getReturndate());
-        holder.TransactionPrice.setText(formatRupiah.format(transactionItems.get(position).getTransaction_price()));
+        holder.TransactionBorrowed.setText("Borrow Date : " + transactionItems.get(position).getBorrowdate());
+        holder.TransactionReturned.setText("Return Date : " + transactionItems.get(position).getReturndate());
+        holder.TransactionPrice.setText("Total Price : " + formatRupiah.format(transactionItems.get(position).getTransaction_price()));
 
 
 

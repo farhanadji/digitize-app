@@ -50,8 +50,8 @@ public class BookAdapter extends RecyclerView.Adapter<BookAdapter.BookViewHolder
     public void onBindViewHolder(@NonNull BookAdapter.BookViewHolder holder, int position) {
         final int bookId = book.get(position).getBook_id();
         holder.bookTitle.setText(book.get(position).getBook_title());
-        holder.bookAuthor.setText(book.get(position).getBook_author());
-        holder.bookPrice.setText(formatRupiah.format(book.get(position).getPrice()));
+        holder.bookAuthor.setText("Author : " + book.get(position).getBook_author());
+        holder.bookPrice.setText("Daily Price : " + formatRupiah.format(book.get(position).getPrice()));
 
         holder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
