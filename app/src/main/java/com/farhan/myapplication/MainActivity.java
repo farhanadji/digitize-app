@@ -68,16 +68,21 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Intent login = new Intent(MainActivity.this, LoginActivity.class);
-        Bundle extras = getIntent().getExtras();
+        Bundle extras = null;
+
         key_intent = getIntent().getStringExtra("api_key");
+        extras = getIntent().getExtras();
         if (extras != null) {
             userItem = extras.getParcelable("dataUser");
-            api_key = userItem.getApi_token();
+            if(userItem != null) {
+                api_key = userItem.getApi_token();
+            }
         }
 
         if(key_intent != null){
             api_key = key_intent;
         }
+
             if (api_key.isEmpty()) {
                 startActivity(login);
                 finish();
@@ -88,5 +93,4 @@ public class MainActivity extends AppCompatActivity {
                 navigation.setSelectedItemId(R.id.navigation_book);
             }
     }
-
 }
